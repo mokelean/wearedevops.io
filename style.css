@@ -2,46 +2,50 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
-    line-height: 1.6;
+    color: #000;
+    background-color: #fff;
 }
 
-header, footer {
-    background-color: #007bff;
-    color: white;
+header {
+    background-color: #000;
+    color: #fff;
     padding: 1rem;
     text-align: center;
+}
+
+header h1 {
+    color: #f7a8b8; /* Un rosa suave */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
     display: inline-block;
     position: relative;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
-    padding: 10px;
+    color: #fff;
+    padding: 10px 20px;
     display: block;
     text-decoration: none;
 }
 
-/* Estilos para el menú desplegable */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    background-color: #f7a8b8; /* Rosa como color de fondo */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: #000;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -52,13 +56,11 @@ nav ul li a {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #ffbfd3; /* Un rosa más claro para el hover */
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #000;
+    color: #fff;
     text-align: center;
-    padding: 10px;
-    position: relative; /* Modificado para asegurar que el footer se muestre correctamente */
-}
+    padding:
