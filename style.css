@@ -25,9 +25,8 @@ header {
     text-align: center;
 }
 
-
 header h1 {
-    color: #f7a8b8; /* Un tono de rosa */
+    color: #fff;
 }
 
 nav ul {
@@ -49,10 +48,15 @@ nav ul li a {
 }
 
 /* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f7a8b8; /* Fondo rosa */
+    background-color: #f7a8b8; /* Fondo rosa para el contenido desplegable */
+    min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -73,15 +77,32 @@ nav ul li a {
     background-color: #ffbfd3; /* Rosa más claro para hover */
 }
 
-footer {
-    background: linear-gradient(to right, #000, #f7a8b8); /* Degradado de negro a rosa */
-    color: white;
+#inicio {
+    padding: 2rem;
+    background: linear-gradient(to right, #fff, #f7a8b8); /* Fondo con degradado suave */
+}
+
+#inicio h2 {
+    color: #000;
     text-align: center;
-    padding: 10px 0;
+    margin-bottom: 1rem;
+}
+
+#inicio p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 4rem; /* Altura de tu footer */
+    background: linear-gradient(to right, #000, #f7a8b8); /* Degradado de negro a rosa */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
-
-
