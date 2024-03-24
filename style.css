@@ -26,8 +26,11 @@ header {
 }
 
 .header-content {
-    padding-left: 1rem; /* Agrega un poco de espacio en el lado izquierdo */
-    text-align: left;
+    padding-left: 1rem; /* Espacio desde el margen izquierdo */
+}
+
+.header-container {
+    text-align: left; /* Asegura que todo el contenido esté alineado a la izquierda */
 }
 
 h1, .slogan {
