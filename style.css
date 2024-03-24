@@ -26,10 +26,10 @@ header {
 }
 
 .header-content {
-    max-width: 1200px; /* O el ancho máximo que prefieras para el contenido */
-    margin: 0 auto; /* Esto centra .header-content dentro de header */
-    text-align: left; /* Esto alinea el texto a la izquierda dentro de .header-content */
-    padding-left: 5%; /* Ajusta al gusto para desplazar el contenido hacia la izquierda */
+    max-width: 1200px; /* o el ancho máximo que prefieras para el contenido */
+    margin: 0 auto; /* Esto centra el .header-content */
+    padding-left: 1em; /* Ajusta esto a 1em o 16px, o lo que necesites para pegarlo al margen */
+    text-align: left;
 }
 
 h1, .slogan {
