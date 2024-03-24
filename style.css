@@ -26,14 +26,14 @@ header {
 }
 
 .header-content {
-    max-width: 1200px; /* o el ancho máximo que prefieras para el contenido */
-    margin: 0 auto; /* Esto centra el .header-content */
-    padding-left: 1em; /* Ajusta esto a 1em o 16px, o lo que necesites para pegarlo al margen */
+    padding-left: 1rem; /* Agrega un poco de espacio en el lado izquierdo */
     text-align: left;
 }
 
 h1, .slogan {
-    margin: 0; /* Elimina márgenes por defecto */
+    margin: 0; /* Elimina los márgenes por defecto */
+    padding: 0; /* No es necesario agregar padding aquí ya que .header-content lo tiene */
+    display: inline-block; /* Esto permite que el padding aplique correctamente */
 }
 
 
