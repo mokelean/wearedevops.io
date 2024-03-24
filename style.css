@@ -25,10 +25,14 @@ header {
     text-align: center; /* Esto centra el contenido del .header-content */
 }
 
+.header-content {
+    padding-left: 1cm; /* o el valor que prefieras para el espacio a la izquierda */
+    text-align: left;
+}
+
 .header-content h1,
 .header-content .slogan {
     margin: 0; /* Elimina los márgenes por defecto */
-    padding: 0; /* Asegúrate de que no hay padding que afecte la alineación */
     display: block; /* Esto hará que cada elemento se apile verticalmente */
 }
 
