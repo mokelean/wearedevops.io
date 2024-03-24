@@ -36,13 +36,6 @@ header {
     text-align: left; /* Asegura que todo el contenido esté alineado a la izquierda */
 }
 
-h1, .slogan {
-    margin: 0; /* Elimina los márgenes por defecto */
-    padding: 0; /* No es necesario agregar padding aquí ya que .header-content lo tiene */
-    display: inline-block; /* Esto permite que el padding aplique correctamente */
-}
-
-
 nav ul {
     list-style: none;
     padding: 0;
