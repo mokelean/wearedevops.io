@@ -11,11 +11,10 @@ html, body {
 
 body {
     font-family: Arial, sans-serif;
-    min-height: 100%;
-    padding-bottom: 4rem; /* Espacio para el footer */
     background-color: #fff;
     color: #000;
     line-height: 1.6;
+    margin: 0;
 }
 
 header {
@@ -26,7 +25,7 @@ header {
 }
 
 .header-content {
-    padding-left: 1cm; /* Ajusta esto si necesitas más espacio */
+    padding-left: 1cm;
     text-align: left;
 }
 
@@ -83,18 +82,19 @@ nav ul li a {
     background-color: #ffbfd3;
 }
 
-.main-content, .sidebar {
-    float: left;
-    padding: 15px;
-}
-
 .main-content {
+    float: left;
     width: 75%;
+    padding: 15px;
+    min-height: calc(100vh - 8rem); /* Ajusta este valor según la altura de tu header y footer */
 }
 
 .sidebar {
+    float: left;
     width: 25%;
     background: #f7a8b8;
+    padding: 15px;
+    min-height: calc(100vh - 8rem); /* Ajusta este valor según la altura de tu header y footer */
 }
 
 .sidebar h3 {
@@ -103,43 +103,47 @@ nav ul li a {
     color: white;
 }
 
-/* Estilos adicionales para los logos de tecnologías */
 .tech-logos {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start; /* Alinea los logos a la izquierda */
+    justify-content: flex-start;
     padding: 10px 0;
 }
 
 .tech-logo {
-    height: auto; /* Ajusta la altura automáticamente */
-    max-height: 50px; /* Altura máxima para mantener la uniformidad */
-    width: auto; /* Ajusta el ancho automáticamente para mantener la relación de aspecto */
-    max-width: 100px; /* Ancho máximo para la uniformidad */
-    margin: 10px; /* Espacio alrededor de los logos */
+    height: auto;
+    max-height: 50px;
+    max-width: 100px;
+    margin: 10px;
+    width: auto;
 }
 
-/* Resetea los estilos de la lista */
-.sidebar ul {
-    padding: 0;
-    margin: 0;
+footer {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    background: linear-gradient(to right, #000, #f7a8b8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    clear: both; /* Agregado para limpiar el flotamiento del contenido */
 }
 
-/* Estilos para cuando la pantalla es menor a 600px */
 @media screen and (max-width: 600px) {
     .main-content, .sidebar {
         float: none;
         width: auto;
-        padding: 15px 0; /* Ajusta el padding superior e inferior */
+        padding: 15px 0;
+        min-height: auto; /* Restablece la altura mínima para dispositivos móviles */
     }
 
     .tech-logos {
-        justify-content: center; /* Centra los logos en pantallas pequeñas */
+        justify-content: center;
     }
 
     .tech-logo {
-        margin: 10px; /* Espacio alrededor de los logos */
-        max-height: 40px; /* Altura máxima más pequeña para pantallas pequeñas */
+        margin: 10px;
+        max-height: 40px;
     }
 }
