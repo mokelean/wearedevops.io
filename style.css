@@ -12,7 +12,7 @@ html, body {
 body {
     font-family: Arial, sans-serif;
     min-height: 100%;
-    padding-bottom: 4rem; /* Espacio para el footer, ajusta según la altura de tu footer */
+    padding-bottom: 4rem; /* Espacio para el footer */
     background-color: #fff;
     color: #000;
     line-height: 1.6;
@@ -21,23 +21,23 @@ body {
 header {
     background: linear-gradient(to right, #000, #f7a8b8);
     color: white;
-    padding: 1rem 0; /* Arriba y abajo mantienen 1rem, izquierda y derecha 0 */
-    text-align: center; /* Esto centra el contenido del .header-content */
+    padding: 1rem 0;
+    text-align: center;
 }
 
 .header-content {
-    padding-left: 1cm; /* o el valor que prefieras para el espacio a la izquierda */
+    padding-left: 1cm; /* Ajusta esto si necesitas más espacio */
     text-align: left;
 }
 
 .header-content h1,
 .header-content .slogan {
-    margin: 0; /* Elimina los márgenes por defecto */
-    display: block; /* Esto hará que cada elemento se apile verticalmente */
+    margin: 0;
+    display: block;
 }
 
 .header-container {
-    text-align: left; /* Asegura que todo el contenido esté alineado a la izquierda */
+    text-align: left;
 }
 
 nav ul {
@@ -79,9 +79,8 @@ nav ul li a {
     display: block;
 }
 
-/* Estilo hover para los enlaces del menú desplegable */
 .dropdown-content a:hover {
-    background-color: #ffbfd3; /* Rosa más claro */
+    background-color: #ffbfd3;
 }
 
 .main-content, .sidebar {
@@ -95,65 +94,52 @@ nav ul li a {
 
 .sidebar {
     width: 25%;
-    background: #f7a8b8; /* Fondo rosa para la barra lateral */
+    background: #f7a8b8;
 }
 
-.sidebar h3, .sidebar ul {
+.sidebar h3 {
     margin: 0;
     padding: 0.5rem;
     color: white;
 }
 
-.sidebar ul {
-    list-style-type: none; /* Elimina los puntos de la lista */
-}
-
-.sidebar ul li {
-    background-color: #f7a8b8; /* Rosa */
-    padding: 5px;
-    margin-bottom: 5px;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 4rem;
-    background: linear-gradient(to right, #000, #f7a8b8);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-@media screen and (max-width: 600px) {
-    .main-content, .sidebar {
-        float: none;
-        width: auto;
-    }
-
+/* Estilos adicionales para los logos de tecnologías */
 .tech-logos {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around; /* Distribuye el espacio alrededor de los logos */
+    justify-content: flex-start; /* Alinea los logos a la izquierda */
     padding: 10px 0;
 }
 
 .tech-logo {
-    /* Fija el ancho o el alto, dependiendo de lo que mantenga la consistencia mejor para tus logos */
-    max-height: 50px; /* Limita la altura máxima de los logos */
-    max-width: 100px; /* Limita el ancho máximo de los logos */
-    margin: 10px; /* Espacio uniforme alrededor de los logos */
-    width: auto; /* Mantiene la relación de aspecto original de los logos */
-    height: auto;  /* Mantiene la relación de aspecto original de los logos */
+    height: auto; /* Ajusta la altura automáticamente */
+    max-height: 50px; /* Altura máxima para mantener la uniformidad */
+    width: auto; /* Ajusta el ancho automáticamente para mantener la relación de aspecto */
+    max-width: 100px; /* Ancho máximo para la uniformidad */
+    margin: 10px; /* Espacio alrededor de los logos */
 }
 
+/* Resetea los estilos de la lista */
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para cuando la pantalla es menor a 600px */
 @media screen and (max-width: 600px) {
+    .main-content, .sidebar {
+        float: none;
+        width: auto;
+        padding: 15px 0; /* Ajusta el padding superior e inferior */
+    }
+
     .tech-logos {
         justify-content: center; /* Centra los logos en pantallas pequeñas */
     }
+
     .tech-logo {
-        margin: 10px; /* Espacio uniforme alrededor de los logos */
-        max-height: 40px; /* Puedes disminuir la altura máxima para pantallas pequeñas si es necesario */
+        margin: 10px; /* Espacio alrededor de los logos */
+        max-height: 40px; /* Altura máxima más pequeña para pantallas pequeñas */
     }
 }
