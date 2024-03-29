@@ -130,4 +130,28 @@ footer {
         float: none;
         width: auto;
     }
+
+/* Estilos adicionales para los logos de tecnologías */
+.tech-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start; /* Alinea los logos a la izquierda del contenedor */
+    padding: 10px 0; /* Espacio vertical para separar de otros contenidos */
+}
+
+.tech-logo {
+    height: 50px; /* Altura fija para mantener los logos uniformes */
+    margin-right: 20px; /* Espacio a la derecha de cada logo */
+    margin-bottom: 20px; /* Espacio debajo de cada logo */
+}
+
+/* Ajustes para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    .tech-logos {
+        justify-content: center; /* Centra los logos en pantallas pequeñas */
+    }
+    .tech-logo {
+        margin-right: 10px; /* Menor espacio entre logos en pantallas pequeñas */
+    }
 }
